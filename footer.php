@@ -12,20 +12,28 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'thesetup-practice01' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'thesetup-practice01' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'thesetup-practice01' ), 'thesetup-practice01', '<a href="http://underscores.me/">suman</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="footer-column-1">
+		<?php
+		// this code drags the nav menu to the footer
+            wp_nav_menu(array(
+                'menu' => 'Nav Menu',
+                'theme_location' => 'footer-menu',
+                'menu_class' => 'footer-menu',
+                'menu_id' => 'footer-id'
+            ))
+        ?>
+
+		</div>
+		<div class="footer-column-2"> 
+			<p>facebook</p>
+			<p>twitter</p>
+			<p>instagram</p><br>
+			
+		</div>
+		
+		
 	</footer><!-- #colophon -->
+	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

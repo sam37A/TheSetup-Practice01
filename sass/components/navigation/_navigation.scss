@@ -1,12 +1,24 @@
+.site-header{
+	height: 60px;
+	background-color: rgb(234, 115, 51);
+// style the logo
+	.site-branding{
+		height: 50px;
+		width: 50px;
+		padding:10px 0 0 10px;
+	}
+}
+
 .main-navigation {
 	display: block;
 	width: 100%;
-
+// this ul is just to style link
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		float:right; 
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -56,10 +68,24 @@
 		&.focus > a {
 		}
 	}
-
+// style your links here
 	a {
 		display: block;
 		text-decoration: none;
+		color:#ffffff;
+		font-size: 20px;
+		position: relative;
+		bottom: 40px;
+		padding: 10px 30px 0 0;
+		&:hover{ 
+			color:blue;
+		}
+		&:active{ 
+			color:red;
+		}
+		
+}
+	
 	}
 
 	.current_page_item > a,
@@ -67,7 +93,7 @@
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}
-}
+
 
 /* Small menu. */
 .menu-toggle,
