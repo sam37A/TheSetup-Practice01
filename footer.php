@@ -27,7 +27,7 @@
 		<div class="footer-column-2"> 
 			<p>facebook</p>
 			<p>twitter</p>
-			<p>instagram</p><br>
+			<p>instagram</p>
 			
 		</div>
 		

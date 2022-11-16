@@ -4,7 +4,7 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background-color: aquamarine;
+    background-color:  rgb(234, 115, 51);;
     .footer-column-1{
         ul{
             li{
@@ -13,6 +13,10 @@
             }
             a{
                 text-decoration: none;
+                color:#ffffff;
+                &:hover{
+                    color:rgb(0, 26, 255);
+                }
             }
         }
 
@@ -21,11 +25,30 @@
         p{
             display: inline-block;
             padding: 10px;
+            color:#ffffff;
             &:hover{
                 color:rgb(0, 26, 255);
             }
         }
     }
+    
    
 
+}
+
+@media screen and (max-width: 600px) {
+    .site-footer{
+        height: 150px;
+    }
+
+  .site-footer .footer-column-1 ul li{
+    
+    display: block;
+  }
+   
+  .site-footer .footer-column-2 p{
+
+    display: block;
+    line-height: 0;
+  }
 }

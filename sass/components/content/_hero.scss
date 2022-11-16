@@ -1,0 +1,22 @@
+.template-parts{
+    height: 260px;
+    background-color: blueviolet;
+    color:white;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    & h1,h2,h3{
+        color:rgb(241, 233, 233);
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 37.5em) {
+
+.template-parts{
+    height: 300px;
+    
+}
+}
